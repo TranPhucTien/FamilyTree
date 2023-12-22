@@ -55,4 +55,7 @@ export default {
       compact: true,
     },
   },
+  generate: {
+    dir: 'dist'
+  }
 }
