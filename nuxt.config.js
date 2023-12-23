@@ -56,6 +56,7 @@ export default {
     },
   },
   generate: {
-    dir: 'dist'
+    dir: 'dist',
+    outputs: ["dist/**"]
   }
 }
