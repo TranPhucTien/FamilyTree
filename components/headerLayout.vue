@@ -29,7 +29,8 @@
             </b-button>
 
             <!-- lịch sử -->
-            <b-button v-if="showSearch" class="mr-3" pill variant="outline-light" style="border: none">
+            <b-button v-if="showSearch && actionJoin === 1" class="mr-3" pill variant="outline-light"
+              style="border: none">
               <a class="ls" :href="'/lich_su_chinh_sua?treeId=' + treeId" style="">
                 <strong>Lịch sử</strong>
               </a>
@@ -42,7 +43,7 @@
             </b-button>
 
             <!-- Danh sách ngươi dùng -->
-            <b-button v-if="showSearch && actionJoin === 1" v-b-modal.control-user pill variant="outline-primary"
+            <b-button v-if="showSearch" v-b-modal.control-user pill variant="outline-primary"
               style="border: none; color: #fff">
               <strong>QL người dùng</strong>
             </b-button>
